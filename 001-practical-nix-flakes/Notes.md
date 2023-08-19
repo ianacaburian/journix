@@ -1,4 +1,4 @@
-**Source:** [Practical Nix Flakes](https://serokell.io/blog/practical-nix-flakes)
+**Source:** [Practical Nix Flakes](https://serokell.io/blog/practical-nix-flakes)   
 
 ## What is Nix?
 
@@ -382,3 +382,12 @@ Now that we’ve written our slightly useful “hello” flake, time to move to 
       });
 }
 ```
+
+# Resources
+- [nixpkgs](https://github.com/nixos/nixpkgs)   
+- [Nix programming language](https://serokell.io/nix-development)   
+- [What is Nix](https://serokell.io/blog/what-is-nix)   
+- [Writing Nix Expressions](https://nixos.org/manual/nix/stable/#chap-writing-nix-expressions)    
+- [Nix Pills](https://nixos.org/guides/nix-pills/)   
+- [Getting a feel for flakes](https://serokell.io/blog/practical-nix-flakes#getting-a-feel-for-flakes)   
+- [`flake-utils`](https://github.com/numtide/flake-utils)   
