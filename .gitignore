@@ -1,5 +1,6 @@
 # Directories
 builds
+result
 
 # Files
 CMakeUserPresets.json
