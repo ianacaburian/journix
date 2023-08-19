@@ -1,3 +1,10 @@
+# Directories
+builds
+result
+
+# Files
+CMakeUserPresets.json
+
 # Prerequisites
 *.d
 
