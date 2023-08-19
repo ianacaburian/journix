@@ -254,7 +254,6 @@ in f 10 20
 
 - While the attribute set that `outputs` returns may contain arbitrary attributes, some standard outputs are understood by various `nix` utilities. 
 	- For example, there is a `packages` output that contains packages.  
-	- For details, see [Getting a feel for flakes](https://serokell.io/blog/practical-nix-flakes#getting-a-feel-for-flakes). 
 
 ```nix
 {
@@ -389,5 +388,4 @@ Now that we’ve written our slightly useful “hello” flake, time to move to 
 - [What is Nix](https://serokell.io/blog/what-is-nix)   
 - [Writing Nix Expressions](https://nixos.org/manual/nix/stable/#chap-writing-nix-expressions)    
 - [Nix Pills](https://nixos.org/guides/nix-pills/)   
-- [Getting a feel for flakes](https://serokell.io/blog/practical-nix-flakes#getting-a-feel-for-flakes)   
 - [`flake-utils`](https://github.com/numtide/flake-utils)   
