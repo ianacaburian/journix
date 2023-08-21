@@ -1,2 +1,2 @@
 # journix
-Journeys in nix
+Journeys in nix... [begin](https://github.com/ianacaburian/journix/wiki).
