@@ -1,24 +1,33 @@
 let
 pkgs = import <nixpkgs> {};
 in
-pkgs.stdenv.mkDerivation {
+pkgs.darwin.apple_sdk_11_0.stdenv.mkDerivation {
   name = "juce";
  
   src = pkgs.fetchFromGitHub {
     owner = "juce-framework";
     repo = "juce";
-    rev = "v7.0.7";
-    sha256 = "0wyy2ksxp95vnh71ybj1bbmqd5ggp13x3mk37pzr99ljs9awy8ka";
+    rev = "7.0.7";
+    sha256 = "fsYoFYRhJZlrTw5VYA1ZPEXTTseWIVfhZjQUxVwwYTk=";
+    deepClone = true;
   };
 
+  nativeBuildInputs = with pkgs; [ cmake ];
+
+  buildInputs = with pkgs.darwin.apple_sdk_11_0.frameworks; [ 
+    Cocoa
+    MetalKit
+    WebKit
+  ];
+
+  configurePhase = ''
+    runHook preConfigure
+    cmake -B juce-nix-build -DCMAKE_INSTALL_PREFIX=$out
+    runHook postConfigure
+  '';
+  buildPhase = ''
+    runHook preBuild
+    cmake --build juce-nix-build --target install
+    runHook postBuild
+  '';
 }
-
-
-  # buildInputs = [ imlib2 xorg.libX11 ];
-
-  # installPhase = ''
-  #   runHook preInstall
-  #   mkdir -p $out/bin
-  #   cp icat $out/bin
-  #   runHook postInstall
-  # '';
