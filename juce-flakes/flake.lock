@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "juce-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1692778425,
+        "narHash": "sha256-r+Wf/skPDexm3rsrVBoWrygKvV9HGlCQd7r0iHr9avM=",
+        "owner": "juce-framework",
+        "repo": "JUCE",
+        "rev": "2a27ebcfae7ca7f6eb62b29d5f002ceefdaadbdb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juce-framework",
+        "ref": "7.0.7",
+        "repo": "JUCE",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1693240935,
+        "narHash": "sha256-x6HQp3lbtAyZf0x7lBkU7R2uknwEqTyMP86ADVo7hEo=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "074dea1e11c459588b4da209cc487d57e1257539",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "juce-src": "juce-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
